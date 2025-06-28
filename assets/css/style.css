@@ -32,6 +32,19 @@ a {
   line-height: 1.27;
   letter-spacing: -0.76px;
 }
+/* tao dau 3 cham thi tieu de hoac p qua nhieu */
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.line-clamp.line-2 {
+  --line-clamp: 2;
+}
+.break-all {
+  word-break: break-all;
+}
 /* ==================header================= */
 .header {
   background: #fffcf4;
@@ -271,8 +284,8 @@ a {
   margin-top: 55px;
 }
 .popular .course-items .thumb {
-  border-radius: 12px 12px 0px 0px;
   width: 100%;
+  border-radius: 12px 12px 0px 0px;
   height: 278px;
   object-fit: cover;
 }
@@ -280,6 +293,7 @@ a {
   border-radius: 12px;
   background: #fff;
   border: 1px solid #e2dfda;
+  flex: 1;
 }
 .popular .course-items:hover {
   border-radius: 12px;
@@ -329,4 +343,112 @@ a {
 }
 .popular .course-items .bnt-book:hover {
   background: var(--color);
+}
+/* =======================feedback==================== */
+.feedback {
+  margin-top: 135px;
+  background-color: #2e2100;
+  padding: 96px 0;
+}
+/* .feedback-list {
+  display: flex;
+  overflow: hidden;
+} */
+/* de co them ung ung chuyen trang thi can them js hoac co thu tren web */
+/* transform: translateX(-100%);
+    transition: all ease .5s; */
+.feedback-items {
+  display: flex;
+  flex-shrink: 0;
+}
+.feedback .info .avatar {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.feedback .info .member-name {
+  margin-top: 18px;
+  color: #f7f7f7;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 1.42;
+}
+.feedback .info .desc {
+  margin-top: 4px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.feedback-items .dots {
+  display: flex;
+  margin-top: 28px;
+  gap: 6px;
+}
+.feedback-items .dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: #634700;
+  cursor: pointer;
+}
+.feedback blockquote {
+  color: #ffffff;
+  font-style: italic;
+  font-size: 2.6rem;
+  line-height: 1.54;
+}
+.feedback-items .content {
+  width: 66%;
+  margin-left: auto;
+}
+.feedback-items .dot.active {
+  background: var(--color);
+  cursor: default;
+}
+/* ==================features================= */
+.features {
+  margin-top: 135px;
+  padding: 65px 0;
+}
+.features .body {
+  display: flex;
+  justify-content: space-between;
+}
+.features .image {
+  display: flex;
+  gap: 30px;
+}
+.features .image img {
+  width: 270px;
+  height: 405px;
+  object-fit: cover;
+  border-radius: 16px;
+}
+.features .lower {
+  margin-top: 34px;
+}
+.features .content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+}
+.features .content .desc {
+  color: #5f5b53;
+  margin-top: 16px;
+  font-size: 1.6rem;
+  line-height: 1.75;
+}
+.features .cta-btn {
+  width: 137px;
+  height: 50px;
+  margin-top: 32px;
+  background-color: var(--color);
+  cursor: pointer;
+}
+.features .btn:hover {
+  opacity: 0.9;
 }
