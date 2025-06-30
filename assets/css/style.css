@@ -563,3 +563,68 @@ a {
   background: var(--color);
   cursor: default;
 }
+/* ==================Footer================= */
+.footer {
+  padding: 96px 135px 28px;
+  background: #2e2100;
+}
+.footer .row {
+  padding-bottom: 38px;
+  border-bottom: 1px solid #59554b;
+  display: flex;
+}
+.footer .desc {
+  margin-top: 18px;
+  max-width: 267px;
+  color: #bfbcb2;
+  font-size: 1.4rem;
+  line-height: 26px;
+}
+.footer .row .column {
+  width: 21.6%;
+}
+.footer .row .column:first-child {
+  width: 35%;
+}
+.footer .socials {
+  margin-top: 18px;
+  display: flex;
+  gap: 18px;
+}
+.footer .title {
+  padding-bottom: 14px;
+  padding-right: 48px;
+  display: inline-block;
+  border-bottom: 1px solid #59554b;
+  font-weight: 600;
+  font-size: 1.6rem;
+  line-height: 1.75;
+  color: #fff;
+}
+.footer .list {
+  margin-top: 28px;
+}
+.footer .list a {
+  /* mac dinh the a la inline ma inline khong the padding */
+  color: #bfbcb2;
+  display: inline-block;
+  padding-bottom: 12px;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.footer .list li:last-child a {
+  padding-bottom: 0;
+}
+.footer .list .strong {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.4rem;
+  line-height: 1.86;
+}
+.footer .copyright {
+  padding: 28px 0;
+  color: #807d74;
+  font-size: 1.4;
+  line-height: 1.86;
+  text-align: center;
+}
